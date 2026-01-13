@@ -1,16 +1,15 @@
 import { Link } from '@inertiajs/react';
-import { login, register } from '@/routes';
-
+import { login, logout, register } from '@/routes';
+import { edit as profile } from '@/routes/profile';
 
 export default function Navbar() {
     return (
         <>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <Link href={"/"} className="btn btn-ghost text-xl">MazeedStores</Link>
                 </div>
                 <div className="flex gap-4">
-                    
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <div className="indicator">
@@ -42,13 +41,11 @@ export default function Navbar() {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li>
-                                <a className="justify-between">
+                                <Link href={profile()} className="justify-between">
                                     Profile
-                                    <span className="badge">New</span>
-                                </a>
+                                </Link>
                             </li>
-                            <li><a>Settings</a></li>
-                            <li><a>Logout</a></li>
+                            <li><Link href={logout()} as={"button"} method='post'>Logout</Link></li>
                         </ul>
                     </div>
                     <div className="flex gap-4">
