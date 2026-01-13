@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Spinner } from '@/components/ui/spinner';
 import AuthLayout from '@/layouts/auth-layout';
+import Navbar from '../Navbar';
 
 export default function Register() {
     return (
@@ -18,6 +19,7 @@ export default function Register() {
             description="Enter your details below to create your account"
         >
             <Head title="Register" />
+            
             <div className="flex flex-col gap-6">
                 <div className="card bg-base-100 w-full shadow-2xl">
                     <div className="card-body">

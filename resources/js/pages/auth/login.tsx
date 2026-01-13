@@ -12,6 +12,7 @@ import { request } from '@/routes/password';
 import { Card, CardContent } from '@/components/ui/card';
 import { Form, Head } from '@inertiajs/react';
 import { Lock, Mail } from 'lucide-react';
+import Navbar from '../Navbar';
 
 interface LoginProps {
     status?: string;
@@ -31,7 +32,7 @@ export default function Login({
         >
             <Head title="Log in" />
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 bg-white">
                 <Card>
                     <CardContent className="pt-6">
                         <Form
