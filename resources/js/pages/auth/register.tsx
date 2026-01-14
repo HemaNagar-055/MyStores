@@ -21,7 +21,7 @@ export default function Register() {
             <Head title="Register" />
             
             <div className="flex flex-col gap-6">
-                <div className="card bg-base-100 w-full shadow-2xl">
+                <div className="card bg-gray-50 w-full shadow-2xl">
                     <div className="card-body">
                         <Form
                             {...store.form()}

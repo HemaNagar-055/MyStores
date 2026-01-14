@@ -32,7 +32,7 @@ export default function Login({
         >
             <Head title="Log in" />
 
-            <div className="flex flex-col gap-6 bg-white">
+            <div className="flex flex-col gap-6">
                 <Card>
                     <CardContent className="pt-6">
                         <Form
